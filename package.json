@@ -1,9 +1,19 @@
 {
-  "name": "todo-app",
+  "name": "taskflow",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Aplicación de tareas moderna con React, Atomic Design y hooks personalizados",
+  "description": "TaskFlow - Modern task manager built with React, Atomic Design and custom hooks",
+  "author": "JesusMelville",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "todo",
+    "task-manager",
+    "atomic-design",
+    "hooks",
+    "vite"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
