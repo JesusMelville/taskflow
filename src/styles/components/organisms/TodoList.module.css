@@ -1,0 +1,106 @@
+/* TodoList Styles */
+.todoList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.todoListHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) 0;
+}
+
+.todoListTitle {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.todoListCount {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: var(--bg-tertiary);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+}
+
+/* Filter Tabs */
+.filterTabs {
+    display: flex;
+    gap: var(--space-xs);
+    padding: var(--space-xs);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+}
+
+.filterTab {
+    flex: 1;
+    padding: 0.625rem;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filterTab:hover {
+    color: var(--text-primary);
+}
+
+.filterTabActive {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Sort Options */
+.sortOptions {
+    display: flex;
+    gap: var(--space-sm);
+    align-items: center;
+    margin-bottom: var(--space-md);
+}
+
+.sortLabel {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.sortSelect {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.sortSelect:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+/* Clear Completed Button */
+.clearCompleted {
+    margin-top: var(--space-md);
+    padding: 0.75rem;
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.clearCompleted:hover {
+    border-color: var(--color-danger);
+    color: var(--color-danger);
+    background: rgba(255, 107, 107, 0.05);
+}

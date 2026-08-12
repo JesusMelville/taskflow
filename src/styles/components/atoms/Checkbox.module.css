@@ -1,0 +1,95 @@
+/* Checkbox Styles */
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkboxHidden {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkboxCustom {
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+    flex-shrink: 0;
+}
+
+.checkboxHidden:checked + .checkboxCustom {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    border-color: transparent;
+}
+
+.checkboxHidden:checked + .checkboxCustom svg {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.checkboxHidden:focus-visible + .checkboxCustom {
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.3);
+}
+
+.checkboxCustom svg {
+    width: 14px;
+    height: 14px;
+    stroke: white;
+    stroke-width: 3;
+    fill: none;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all var(--transition-fast);
+}
+
+.checkboxLabel {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    transition: color var(--transition-fast);
+}
+
+.checkboxHidden:checked ~ .checkboxLabel {
+    color: var(--text-secondary);
+    text-decoration: line-through;
+}
+
+/* Sizes */
+.checkboxSm .checkboxCustom {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+}
+
+.checkboxSm .checkboxCustom svg {
+    width: 12px;
+    height: 12px;
+}
+
+.checkboxSm .checkboxLabel {
+    font-size: 0.85rem;
+}
+
+.checkboxLg .checkboxCustom {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+}
+
+.checkboxLg .checkboxCustom svg {
+    width: 16px;
+    height: 16px;
+}
+
+.checkboxLg .checkboxLabel {
+    font-size: 1.05rem;
+}
