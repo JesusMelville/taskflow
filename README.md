@@ -1,56 +1,56 @@
 # TaskFlow
 
-Modern task manager built with React, Atomic Design and custom hooks.
+Gestor de tareas moderno construido con React, Atomic Design y hooks personalizados.
 
-## Features
+## Caracteristicas
 
-- **Full CRUD**: Create, read, update and delete tasks
-- **Filtering**: View all, active or completed tasks
-- **Sorting**: By date, priority or alphabetical
-- **Priorities**: High, medium and low with distinct colors
-- **Inline editing**: Edit tasks without modals
-- **Persistence**: localStorage keeps your tasks between sessions
-- **Dark/Light Mode**: Instant toggle with persistence
-- **Responsive**: Works on mobile, tablet and desktop
+- **CRUD completo**: Crear, leer, actualizar y eliminar tareas
+- **Filtrado**: Ver todas, activas o completadas
+- **Ordenamiento**: Por fecha, prioridad o alfabetico
+- **Prioridades**: Alta, media y baja con colores distintivos
+- **Edicion inline**: Editar tareas sin abrir modales
+- **Persistencia**: localStorage mantiene tus tareas entre sesiones
+- **Dark/Light Mode**: Cambio instantaneo con persistencia
+- **Responsive**: Funciona en movil, tablet y desktop
 
-## Tech Stack
+## Stack Tecnico
 
-- **React 18** - UI library
+- **React 18** - Biblioteca UI
 - **Vite** - Build tool
-- **CSS Modules** - Encapsulated styles
-- **Lucide React** - Icons
+- **CSS Modules** - Estilos encapsulados
+- **Lucide React** - Iconos
 
-## Architecture
+## Arquitectura
 
-| Level | Description | Examples |
+| Nivel | Descripcion | Ejemplos |
 |-------|-------------|----------|
-| **Atoms** | Basic elements | Button, Input, Checkbox |
-| **Molecules** | Atom combinations | TodoItem, TodoForm |
-| **Organisms** | Complete sections | TodoList, Header, Stats |
-| **Templates** | Page layouts | MainTemplate |
+| **Atoms** | Elementos basicos | Button, Input, Checkbox |
+| **Molecules** | Combinaciones de atoms | TodoItem, TodoForm |
+| **Organisms** | Secciones completas | TodoList, Header, Stats |
+| **Templates** | Layouts de pagina | MainTemplate |
 
-## Getting Started
+## Instalacion
 
 ```bash
-# Clone
+# Clonar
 git clone https://github.com/JesusMelville/taskflow.git
 
-# Install
+# Instalar
 cd taskflow
 npm install
 
-# Run
+# Ejecutar
 npm run dev
 ```
 
-## Scripts
+## Comandos
 
-| Command | Description |
+| Comando | Descripcion |
 |---------|-------------|
-| `npm run dev` | Start dev server |
-| `npm run build` | Production build |
-| `npm run preview` | Preview build |
+| `npm run dev` | Servidor de desarrollo |
+| `npm run build` | Build para produccion |
+| `npm run preview` | Vista previa del build |
 
-## License
+## Licencia
 
 MIT
